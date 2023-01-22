@@ -5,8 +5,8 @@ contract Mappings {
     // firstname, lastname, year
     mapping(uint => mapping(uint => string)) multi_dimensional;
 
-    function setUsers() public {
-        // al the values in the 2nd dimension must to be strings
+    constructor() {
+        // all the values in the 2nd dimension must to be strings
         multi_dimensional[0][0] = "David";
         multi_dimensional[0][1] = "Biagiola";
         multi_dimensional[0][2] = "1994";
